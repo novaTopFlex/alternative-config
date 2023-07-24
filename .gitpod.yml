@@ -1,1 +1,1 @@
-image: library/alpine
+image: scratch
