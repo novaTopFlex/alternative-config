@@ -1,1 +1,1 @@
-image: alpine:latest
+image: library/alpine:latest
