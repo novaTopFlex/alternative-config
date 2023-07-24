@@ -1,3 +1,7 @@
-FROM library/alpine
+FROM scratch
+ADD alpine-minirootfs-3.18.2-x86_64.tar.gz /
 USER root
-RUN apk add sudo; apk add nano; apk add python; apk add emacs; apk add vim
+CMD ["/bin/sh"]
+RUN apk add sudo
+RUN apk add python3
+RUN apk add nano
