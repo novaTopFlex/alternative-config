@@ -1,5 +1,4 @@
-FROM scratch
-ADD alpine-minirootfs-3.18.2-x86_64.tar.gz /
+FROM library/alpine:latest
 USER root
 CMD ["/bin/sh"]
 RUN apk add sudo
